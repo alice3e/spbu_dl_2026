@@ -34,14 +34,24 @@
     "configurations_total": 343,
     "csv_files": 25,
     "unique_csv_contents": 24,
-    "protocol_note": "Число конфигураций считается отдельно внутри каждого направления и включает контрольные модели; между направлениями есть повторения. Три validation-разбиения использовались для выбора. Audit открыт после заморозки новых конфигураций; исходный baseline оценивался на нём ранее. CSV обучены на 14000, audit-метрики относятся к checkpoint с 9800 train. Новые public/private scores неизвестны."
+    "protocol_note": "Число конфигураций считается отдельно внутри каждого направления и включает контрольные модели; между направлениями есть повторения. Три validation-разбиения использовались для выбора. Audit открыт после заморозки новых конфигураций; исходный baseline оценивался на нём ранее. CSV обучены на 14000, audit-метрики относятся к checkpoint с 9800 train. Известные public scores внесены по скриншоту пользователя. Private scores неизвестны. Экспериментальные ноутбуки удалены из рабочей ветки после выбора meansquad; их исходные пути указаны в historical_notebook и доступны в historical_notebook_revision. Все CSV сохранены без изменений.",
+    "historical_notebook_revision": "c7dac32b8522dfab24f6f7c5d021e0dd6bd1175b",
+    "baseline_notebook_sha256_note": "SHA256 исходного task4.ipynb до замены финальным meansquad; версия сохранена в historical_notebook_revision.",
+    "selected_submission": {
+      "id": "combined_meansquad",
+      "file": "homeworks/task4_data/Submission/task4_combined_meansquad.csv",
+      "notebook": "homeworks/task4.ipynb",
+      "sha256": "3bf3253cc4c6acdec0cc9ea2a92a34ae2a32c6c94c5f25f01bb9921d43fd7b1d",
+      "public_score": 80.65531,
+      "reproduction": "Финальный task4.ipynb выполнен целиком; CSV воспроизведён побайтово без перезаписи существующего файла."
+    }
   },
   "submissions": [
     {
       "family": "combined",
       "id": "combined_meansquad",
       "file": "homeworks/task4_data/Submission/task4_combined_meansquad.csv",
-      "notebook": "homeworks/task4_combined.ipynb",
+      "notebook": "homeworks/task4.ipynb",
       "validation_mean_mse": 78.39712253196136,
       "validation_mse": {
         "42": 78.44163185905843,
@@ -75,15 +85,18 @@
         "n_features": 168
       },
       "sha256": "3bf3253cc4c6acdec0cc9ea2a92a34ae2a32c6c94c5f25f01bb9921d43fd7b1d",
-      "public_score": null,
+      "public_score": 80.65531,
       "duplicate_of": null,
-      "upload_priority": 3
+      "historical_notebook": "homeworks/task4_combined.ipynb",
+      "selected": true,
+      "historical_upload_priority": 3,
+      "public_score_source": "Скриншот Kaggle, предоставленный пользователем при выборе финального решения."
     },
     {
       "family": "combined",
       "id": "combined_meansnorm",
       "file": "homeworks/task4_data/Submission/task4_combined_meansnorm.csv",
-      "notebook": "homeworks/task4_combined.ipynb",
+      "notebook": null,
       "validation_mean_mse": 78.68695817985704,
       "validation_mse": {
         "42": 79.32771868059324,
@@ -117,15 +130,18 @@
         "n_features": 91
       },
       "sha256": "30122b89b23ca7b4de36e5800a7024a0dd19f623052da33f4c58120ec59a9630",
-      "public_score": null,
+      "public_score": 81.8786,
       "duplicate_of": null,
-      "upload_priority": 1
+      "historical_notebook": "homeworks/task4_combined.ipynb",
+      "selected": false,
+      "historical_upload_priority": 1,
+      "public_score_source": "Скриншот Kaggle, предоставленный пользователем при выборе финального решения."
     },
     {
       "family": "objectives",
       "id": "reg55_wd1_s0.6_ce2",
       "file": "homeworks/task4_data/Submission/task4_objectives_reg55_wd1_s0.6_ce2.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 78.75741103944561,
       "validation_mse": {
         "42": 79.30734411031717,
@@ -157,13 +173,15 @@
       "sha256": "a1b684188bde0829dbb5192a1144bba887d20a3588760930b4484b16e72d8935",
       "public_score": null,
       "duplicate_of": "homeworks/task4_data/Submission/task4_combined_standard.csv",
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "combined",
       "id": "combined_standard",
       "file": "homeworks/task4_data/Submission/task4_combined_standard.csv",
-      "notebook": "homeworks/task4_combined.ipynb",
+      "notebook": null,
       "validation_mean_mse": 78.75741103944561,
       "validation_mse": {
         "42": 79.30734411031717,
@@ -196,15 +214,18 @@
         "n_features": 90
       },
       "sha256": "a1b684188bde0829dbb5192a1144bba887d20a3588760930b4484b16e72d8935",
-      "public_score": null,
+      "public_score": 81.26586,
       "duplicate_of": null,
-      "upload_priority": 4
+      "historical_notebook": "homeworks/task4_combined.ipynb",
+      "selected": false,
+      "historical_upload_priority": 4,
+      "public_score_source": "Скриншот Kaggle, предоставленный пользователем при выборе финального решения."
     },
     {
       "family": "objectives",
       "id": "reg55_wd5_s0.25_ce2",
       "file": "homeworks/task4_data/Submission/task4_objectives_reg55_wd5_s0.25_ce2.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 78.80468626912388,
       "validation_mse": {
         "42": 79.33992186434212,
@@ -236,13 +257,15 @@
       "sha256": "2ab3e5accf2203ec0a95d2c7674f198504318d9edb2cc7320248e487def0db19",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "objectives",
       "id": "reg55_wd1_s0.6_ce1",
       "file": "homeworks/task4_data/Submission/task4_objectives_reg55_wd1_s0.6_ce1.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 78.81627230147521,
       "validation_mse": {
         "42": 79.28782472705558,
@@ -274,13 +297,15 @@
       "sha256": "a35137b51c872e12e194c8d2119aa31787c0547893db53e5a7ab90f903886574",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "objectives",
       "id": "bn_dist_pure_ce_p1",
       "file": "homeworks/task4_data/Submission/task4_objectives_bn_dist_pure_ce_p1.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 78.93414762973076,
       "validation_mse": {
         "42": 79.8172953451815,
@@ -309,15 +334,18 @@
         "backbone": "batchnorm"
       },
       "sha256": "a66fa3d560dc862a3868ba44028a0ac51990078368f610dff67436a7d721a4ce",
-      "public_score": null,
+      "public_score": 81.11278,
       "duplicate_of": null,
-      "upload_priority": 2
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": 2,
+      "public_score_source": "Скриншот Kaggle, предоставленный пользователем при выборе финального решения."
     },
     {
       "family": "objectives",
       "id": "bn_dist_s0.6_ce1",
       "file": "homeworks/task4_data/Submission/task4_objectives_bn_dist_s0.6_ce1.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 79.37042162056007,
       "validation_mse": {
         "42": 79.71660959189137,
@@ -344,13 +372,15 @@
       "sha256": "f352ef250aaf530f12e668fcf07871a4077b203bda2962a3ba1c4f4c232e73ae",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "preprocessing",
       "id": "strong_meansquad",
       "file": "homeworks/task4_data/Submission/task4_preprocessing_strong_meansquad.csv",
-      "notebook": "homeworks/task4_preprocessing.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.38218508722763,
       "validation_mse": {
         "42": 80.0754906633922,
@@ -378,13 +408,15 @@
       "sha256": "aa56eb7f3015d371bb59bac995577a00dd562447621fc76a4e21b4a11a212497",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_preprocessing.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "regularization",
       "id": "bn128_d55_wd0.5",
       "file": "homeworks/task4_data/Submission/task4_regularization_bn128_d55_wd0.5.csv",
-      "notebook": "homeworks/task4_regularization.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.40380686953192,
       "validation_mse": {
         "42": 80.91654095286415,
@@ -413,13 +445,15 @@
       "sha256": "c7087de78488be3daa77efebccc9b3012cc87680cf99ee8c2ec1f2afc9b01edf",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": 5
+      "historical_notebook": "homeworks/task4_regularization.ipynb",
+      "selected": false,
+      "historical_upload_priority": 5
     },
     {
       "family": "augmentation",
       "id": "mix0.05_d0.55",
       "file": "homeworks/task4_data/Submission/task4_augmentation_mix0.05_d0.55.csv",
-      "notebook": "homeworks/task4_augmentation.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.46954663038254,
       "validation_mse": {
         "42": 80.33168155062766,
@@ -455,13 +489,15 @@
       "sha256": "024d27637315f13899f4cdf98f315e0c70533367bd619d713a8a9f7cee411c59",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_augmentation.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "preprocessing",
       "id": "strong_meansnorm",
       "file": "homeworks/task4_data/Submission/task4_preprocessing_strong_meansnorm.csv",
-      "notebook": "homeworks/task4_preprocessing.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.47002465148768,
       "validation_mse": {
         "42": 80.55515919656271,
@@ -489,13 +525,15 @@
       "sha256": "46be6ee178797a463a01424b19f6fb4ad7971d748bf5b0604c014ae387c106f8",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_preprocessing.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "augmentation",
       "id": "mask0.05_d0.4",
       "file": "homeworks/task4_data/Submission/task4_augmentation_mask0.05_d0.4.csv",
-      "notebook": "homeworks/task4_augmentation.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.50374695061454,
       "validation_mse": {
         "42": 80.53067177243885,
@@ -531,13 +569,15 @@
       "sha256": "59242544523d171d6a6018a421edb1428fd59c493c1d32f7928bedf87e6f526d",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_augmentation.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "regularization",
       "id": "bn128_d55_wd0.1",
       "file": "homeworks/task4_data/Submission/task4_regularization_bn128_d55_wd0.1.csv",
-      "notebook": "homeworks/task4_regularization.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.51680950748778,
       "validation_mse": {
         "42": 80.9133898787839,
@@ -566,13 +606,15 @@
       "sha256": "25179919d5de46e34e3d63a5a966646ab7b6690a3a178addf3a7de4cef38842a",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_regularization.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "objectives",
       "id": "bn_gaussian_m1_n1",
       "file": "homeworks/task4_data/Submission/task4_objectives_bn_gaussian_m1_n1.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.52677871804862,
       "validation_mse": {
         "42": 80.01483151100221,
@@ -596,13 +638,15 @@
       "sha256": "9a4bd0ea8a28da76bb0bd567a385ffd41f327cb4956da05bcafc47d77d5940fa",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "augmentation",
       "id": "mix0.05_d0.4",
       "file": "homeworks/task4_data/Submission/task4_augmentation_mix0.05_d0.4.csv",
-      "notebook": "homeworks/task4_augmentation.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.58598085648484,
       "validation_mse": {
         "42": 80.21515406216184,
@@ -638,13 +682,15 @@
       "sha256": "250b7cb58cfa8be9c0a88fb4ebeb465af19d3402b9931176596f8120c1147f2c",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_augmentation.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "preprocessing",
       "id": "bn_relu_rowscale",
       "file": "homeworks/task4_data/Submission/task4_preprocessing_bn_relu_rowscale.csv",
-      "notebook": "homeworks/task4_preprocessing.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.68002337524106,
       "validation_mse": {
         "42": 80.59419161503514,
@@ -671,13 +717,15 @@
       "sha256": "ae10b32c8169b6890bfe7901c593468e4beaa27b8dbf9f9096f67ea845f6e64a",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_preprocessing.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "regularization",
       "id": "w128_batch_d4",
       "file": "homeworks/task4_data/Submission/task4_regularization_w128_batch_d4.csv",
-      "notebook": "homeworks/task4_regularization.ipynb",
+      "notebook": null,
       "validation_mean_mse": 80.92941584542393,
       "validation_mse": {
         "42": 80.99010110525148,
@@ -706,13 +754,15 @@
       "sha256": "ef10301ee58998a1d3228e3691bb02ef537c9dc0fff26a8ccafddd55f9ca59c1",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_regularization.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "interactions",
       "id": "cross_control",
       "file": "homeworks/task4_data/Submission/task4_cross_control.csv",
-      "notebook": "homeworks/task4_interactions.ipynb",
+      "notebook": null,
       "validation_mean_mse": 81.08500587630603,
       "validation_mse": {
         "42": 81.00788809895515,
@@ -738,13 +788,15 @@
       "sha256": "7fefe440a62ea1309c78f4a12cebf586086d5dbc60522ac6c7c0089a487a4548",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_interactions.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "interactions",
       "id": "cross_clip10",
       "file": "homeworks/task4_data/Submission/task4_cross_clip10.csv",
-      "notebook": "homeworks/task4_interactions.ipynb",
+      "notebook": null,
       "validation_mean_mse": 81.4661784721698,
       "validation_mse": {
         "42": 80.9956102070851,
@@ -770,13 +822,15 @@
       "sha256": "1fed15240d7f7a9e5ae808203266b47ede2cf9a1ec7bb94021acd73e962076cb",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_interactions.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "objectives",
       "id": "dist_s0.6_ce1",
       "file": "homeworks/task4_data/Submission/task4_objectives_dist_s0.6_ce1.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 81.4851664940871,
       "validation_mse": {
         "42": 81.27092941213222,
@@ -802,13 +856,15 @@
       "sha256": "d47e19bc5a02a5c1f8cfb1c0b80a0f75bd7895e850d59a58855833aa48aa8305",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "objectives",
       "id": "cdf_aux30",
       "file": "homeworks/task4_data/Submission/task4_objectives_cdf_aux30.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 82.18125121080213,
       "validation_mse": {
         "42": 81.46330087961185,
@@ -834,13 +890,15 @@
       "sha256": "6a9d1f364d5abc1183a06e5b2bd6fa96ebbca2b145285bd103bc5c0688b4c842",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "embeddings",
       "id": "emb_none8_bn_d30",
       "file": "homeworks/task4_data/Submission/task4_emb_none8_bn_d30.csv",
-      "notebook": "homeworks/task4_embeddings.ipynb",
+      "notebook": null,
       "validation_mean_mse": 82.19663236955802,
       "validation_mse": {
         "42": 82.3508207184715,
@@ -865,13 +923,15 @@
       "sha256": "15dbc7613cb13b3400fd7a8f1e5882a53c09453f54176b4c2c66f028ca267d5a",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_embeddings.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "embeddings",
       "id": "emb_none8_none_d40",
       "file": "homeworks/task4_data/Submission/task4_emb_none8_none_d40.csv",
-      "notebook": "homeworks/task4_embeddings.ipynb",
+      "notebook": null,
       "validation_mean_mse": 82.3300725942921,
       "validation_mse": {
         "42": 82.92402293059797,
@@ -896,13 +956,15 @@
       "sha256": "33959085ee4269343d4473c33cb722ab3da9d157f63758a8fc5691d2a14ac899",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_embeddings.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     },
     {
       "family": "objectives",
       "id": "cdf_aux10",
       "file": "homeworks/task4_data/Submission/task4_objectives_cdf_aux10.csv",
-      "notebook": "homeworks/task4_objectives.ipynb",
+      "notebook": null,
       "validation_mean_mse": 82.3734352389995,
       "validation_mse": {
         "42": 81.71818143882213,
@@ -928,7 +990,9 @@
       "sha256": "092eff57620cbb2f394fc7817296c6e3df55bf3dff7b5ad3f74a44d6483c1842",
       "public_score": null,
       "duplicate_of": null,
-      "upload_priority": null
+      "historical_notebook": "homeworks/task4_objectives.ipynb",
+      "selected": false,
+      "historical_upload_priority": null
     }
   ],
   "trials": [
